@@ -1,0 +1,255 @@
+
+* { 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+}
+
+.container {
+    margin: 30px auto;
+    width: 1024px;
+    height: 768px;
+    padding: 5px;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+.logo {
+    width: 90%;
+    margin: 30px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.left {
+    float: left;
+    width: 55%;
+    height: 50%;
+    margin-left: 6%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.right {
+    float: right;
+    width: 30%;
+    height: 70%;
+    margin-right: 5%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+}
+
+.h3 {
+
+    text-align: center;
+}
+
+.buttons {
+    float: left;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;/*espacio cuadrado donde están los botones*/
+    margin-top: 13px;
+}
+
+.logoImage{
+    width: 40%;
+
+}
+
+.title {
+    width: 53%;
+    padding-bottom: 15px;
+    
+}
+
+#textInput {
+    float: left;
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    text-decoration-color: black;
+    border: none;
+    outline: none;
+    background: #dedede;
+
+}
+
+#textoNenhuma {
+    margin-top: 30%;
+    margin-left: 7%;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+#textoDigite {
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 88%;
+    height: 60%;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    text-decoration-color: black;
+    border: none;
+    outline: none;
+    background: white;
+
+}
+
+#nota {
+    font-weight: 800;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    text-decoration-color: black;
+
+}
+
+#encryption-button {
+    padding: 18px 24px;
+    width: 35%;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 4%;
+    margin-left: 20%;
+    background: #bab4b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-decoration-color: black;
+    font-weight: 800;
+}
+
+#decryption-button {
+    padding: 18px 24px;
+    width: 35%;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 4%;
+    margin-left: 5%;
+    background: #bab4b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-decoration-color: white;
+    font-weight: 800;
+
+}
+
+#copy-button {
+    padding: 18px 24px;
+    width: 40%;
+    border-radius: 10px;
+    background: #bab4b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-decoration-color: white;
+    display: none;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 800;
+    display: none;
+
+}
+
+@media (max-width:500px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-left: 8%;
+    }
+
+    .logoImage{
+        width: 50%;
+
+    }
+
+    .left {
+        padding: 16px 12px;
+        width: 90%;
+        height:85% ;
+        margin: auto;
+    }
+
+    .right {
+        order: 4;
+        width: 90%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .buttons {
+        order:3;
+        width: 90%;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #textInput {
+        padding: 18px 24px;
+        width: 90%;
+        height: 60%; 
+    }
+
+    #encryption-button {
+        padding: 18px 24px;
+        width: 98%;
+        height: 90%;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 5%;
+    }  
+
+    #decryption-button{
+        padding: 18px 24px;
+        width: 98%;
+        height: 60%;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    #textoDigite{
+        order: 4;
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        margin-left:8%;
+    }
+
+}

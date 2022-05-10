@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!---->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!---->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title> CODIFICADOR - DECODIFICADOR
+        </title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+
+        <div class = "container">
+
+            <div class = "logo">
+                <img class = " logoImage " src="images/logo.png">
+                <h1 class="title" >Codificador de Mensagens Online</h1>
+            </div>
+
+            <div class = "left">
+                <textarea id ="textInput" placeholder ="Digite seu texto"></textarea>
+            </div>
+
+            <div class="right">
+                <h2 id="textoNenhuma">Nenhuma mensagem encontrada</h2>
+                <textarea id="textoDigite" name="name" rows="8" cols="80">Digite um texto que você deseja criptografar ou descriptografar</textarea>
+                <button id = "copy-button" type = "button" name="button" onclick = "copy()" >Copiar</button>
+            </div>
+            
+            <div class = "buttons">
+                <p id = "nota">* Apenas letras minúsculas e sem acento.</p>
+                <button type = "button" id = "encryption-button" onclick="encrypt()">Criptografar</button>
+                <button type = "button" id ="decryption-button" onclick="decrypt()">Descriptografar</button>
+            </div>
+            
+        </div>
+
+    </body>
+    <script src="JabaScript.js"> </script>
+</html>
